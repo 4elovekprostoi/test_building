@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    /* height: 100%; */
+    font-family: system-ui;
+    font-weight: 600;
+    background-color: #edededa1;
+}
+.wrapper{
+    min-height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.comments{
+    flex: 1 1 auto;
+}
+.comment{
+    width: 850px;
+    /* background-color: cyan; */
+    /* max-width: 500px; */
+    margin: 0 auto 30px;
+}
+.comment p, .comment h3{
+    background-color: #FCFCFC;
+	padding: 10px 12px;
+	border-bottom: 1px solid #E5E5E5;
+	/* overflow: hidden; */
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+    /* max-width: 70%; */
+}
+.comment p{
+    word-wrap: break-word;
+}
+.btn-wrap{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 50px; */
+    align-items: center;
+    height: 150px;
+}
+.btn{
+    /* box-sizing: border-box; */
+    text-align: center;
+    padding: 10px 20px;
+    /* padding: 0.5rem 0.9rem; */
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 0.2rem;
+    transition: ease-in .1s;
+    cursor: pointer;
+    /* background-color: rgb(41, 135, 158); */
+}
+.btn:hover{
+    background-color: #1d1f20;
+    color: whitesmoke;
+}
+.active{
+    background-color: #1d1f20;
+}
+.hide{
+    display: none;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.items:not(:last-child){
+    margin-right: 10px;
+}
+
+.paginatin-btn{
+    padding: 0.5rem 0.9rem;
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 0.2rem;
+    transition: ease-in .1s;
+    cursor: pointer;
+}
+.paginatin-btn:hover{
+    background-color: #1d1f20;
+    color: whitesmoke;
+}
+.active{
+    background-color: #1d1f20;
+    color: whitesmoke;
+}
+footer{
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 50px 0;
+}
+.comment-form{
+    margin: 0 auto;
+    width: 450px;
+    /* height: 600px; */
+    /* background-color: violet; */
+    background-color: #FCFCFC;
+    padding: 50px 20px;
+    font-size: 24px;
+}
+.comment-form-heder{
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.comment-form * {
+    margin-bottom: 20px;
+}
+input{
+    font-size: 24px;
+    outline: none;
+    /* z-index: 1; */
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #1d1f20;
+    background: none;
+    width: 100%;
+    height: 60px;
+    transition: ease-in .1s;
+    padding: 0 0 0 10px;
+}
+.error{
+    border-bottom: 1px solid red;
+    position: relative;
+}
+.error-message {
+    position: relative;
+    transition: ease-in .1s;
+}
+.error-message::before{
+    content: 'Все поля обязательны для заполнения!';
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    width: 100%;
+    height: 11px;
+    /* background-color: black; */
+    top:35px;
+    left:0;
+}
+
+
+
